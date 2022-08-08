@@ -1,0 +1,41 @@
+{
+	"gn1" :
+	{
+		"version_prefix" : "GN1",
+		"extra_flags" :
+		{
+			"MODULE_TEMPERATURE"	: true,
+			"MODULE_MODBUS_MASTER"	: true,
+			"MODULE_TRIAC"			: true,
+			"WIFI_DEFAULT_SSID"		: "\"GRNL_%s\"",
+			"WIFI_DEFAULT_PASS"		: "\"12345678\"",
+			"MODULE_OTA"			: "\"https://updatefirmware.greenole.com.br/gn1/latest.bin\""
+		}
+	},
+	"gn2" :
+	{
+		"version_prefix" : "GN2",
+		"extra_flags" :
+		{
+			"MODULE_TEMPERATURE"	: true,
+			"MODULE_MODBUS_MASTER"	: true,
+			"MODULE_TRIAC"			: true,
+			"WIFI_DEFAULT_SSID"		: "\"GRNL_%s\"",
+			"WIFI_DEFAULT_PASS"		: "\"12345678\"",
+			"MODULE_OTA"			: "\"https://updatefirmware.greenole.com.br/gn2/latest.bin\""
+		}
+	},
+	"gn3" :
+	{
+		"version_prefix" : "GN3",
+		"extra_flags" :
+		{
+			"MODULE_TEMPERATURE"	: true,
+			"MODULE_MODBUS_MASTER"	: true,
+			"MODULE_TRIAC"			: true,
+			"WIFI_DEFAULT_SSID"		: "\"GRNL_%s\"",
+			"WIFI_DEFAULT_PASS"		: "\"12345678\"",
+			"MODULE_OTA"			: "\"https://updatefirmware.greenole.com.br/gn3/latest.bin\""
+		}
+	}
+}

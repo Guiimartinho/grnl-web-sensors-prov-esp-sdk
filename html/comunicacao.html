@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Grenole</title>
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="fullcontainer">
+      <div id="topopaginas">
+        <div id="ico_retorno">
+          <a href="index.html">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAYRJREFUSA1jVDsS/Z+BxoCJxuaDjSfKkmhJV4Z65QSy3cNCSCfIgjqleLAyHmZOhtJb0wlpwZDH65MkaS+4BSCdLsImDAocEhiGEBLA6ROQBeUKUXD9X//+YEi40s7w4McLuBixDKw+wWXBpS93iTUXRR2GJegWfP/3E+wDci0A2YZiCTYLkq92MlBiAYoluCw4++kWitfJ4YB9gm7Bz3+/GUA+oIYFYJ9gsyDtWjfVLABbws7ESk4IkKSH+X4IW8O3fz8YbAR0wRpZGJkZvEQsGE59us7w/OdbkgzDpRgcJ/OebmPofLAMrgbku7na5QzGfGpwMUoY8CSMbhEnEzvVLIJbAnIpLov0eJQp8QhqZsRl0QKdSgZKLELxCcy56D7iZuZgAFmkxa0AU0ISjdUSkAnYLFqkW8UgyyFGkgUgxTgtAUmCLGq6txDEBIP9784zPP7xCsYlmsZZn8BMWPp8N5ipwiXN0Hh3AUyYJJqgJSDTYBaRZDKSYrzBhaSOIiZdLAEAKvqI/DsWqskAAAAASUVORK5CYII="
+            />
+          </a>
+        </div>
+        <div id="titulopaginas">COMUNICAÇÃO</div>
+      </div>
+      <br />
+      <h1>Sensor Value:<span id="pass">pass</span></h1><br>
+
+ 	  <form name="config" action="configSave" method="post">
+      <!--Botão GSM-->
+      <div id="areabotao">
+        <div id="textobotao" class="botoes">GSM</div>
+        <div id="toggle">
+          <label class="switch">
+            <input type="checkbox" onClick="toggleGsm();" id="toggle-gsm"/>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <!--Fim Botão GSM-->
+      <br />
+
+	        <div id="gsm-form" style="display: none">
+            <input
+              type="text"
+              name="apn"
+              id="apn"
+              placeholder="APN"
+              class="input-tr"
+            />
+            <input
+              type="text"
+              name="gprsUser"
+              id="gprsUser"
+              placeholder="GPRS User"
+              class="input-tr"
+            />
+            <input
+              type="text"
+              name="gprsPass"
+              id="gprsPass"
+              placeholder="GPRS Password"
+              class="input-tr"
+            />
+          </div>
+      <br />
+        <div id="divisor"></div>
+        <!--Área dados WiFI-->
+        <!--Botão WIFI-->
+        <div id="areabotao">
+          <div id="textobotao" class="botoes">WIFI</div>
+          <div id="toggle">
+            <label class="switch">
+              <input type="checkbox" onClick="toggleWifi();" id="toggle-wifi" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <!--Fim Botão WIFI-->
+        <br />
+        <!-- Form SSID e PW -->
+          <div id="wifi-form" style="display: none">
+            <div id="ssid">
+              <label for="ssid" class="label-tr"></label>
+              <input
+                type="text"
+                name="ssid"
+                id="ssid"
+                placeholder="SSID"
+                class="input-tr"
+              />
+              <br />
+              &nbsp;
+              <label for="password" class="label-tr"></label>
+              <input
+                type="password"
+                name="pw"
+                id="pw"
+                placeholder="Password"
+                class="input-tr"
+              />
+            </div>
+          <br />
+          <div id="divisor"></div>
+          <!-- Fim de Form SSID e PW -->
+          <!-- Fim de Área de dados WiFI -->
+          <!-- Botão IP STATIC -->
+          <div id="areabotao">
+            <div id="textobotao" class="botoes"><nobr>IP FIXO</nobr></div>
+            <div id="toggle">
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  onClick="toggleDhcp();"
+                  id="toggle-dhcp"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <!-- Botão IP STATIC -->
+          <br />
+          <div id="dhcp-form" style="display: none">
+            <input
+              type="text"
+              name="ip"
+              id="ip"
+              placeholder="IP"
+              class="input-tr"
+            />
+            <input
+              type="text"
+              name="masc"
+              id="mask"
+              placeholder="Máscara"
+              class="input-tr"
+            />
+            <span id="gateway"></span>
+            <input
+              type="text"
+              name="gateway"
+              id="mask"
+              placeholder="Gateway"
+              class="input-tr"
+            />
+            <h1>Sensor Value:<span id="mask">0</span></h1><br>
+          </div>
+		  </div>
+		  
+          <div style="text-align: center;">	
+			<input id="save" type="submit" value="SALVAR" onClick="return confirm('Gravar a configuração?')" >
+		  </div>
+		  
+        </form>
+     </div>
+	
+    <script>		  
+
+      setInterval(function() {
+      // Call a function repetatively with 2 Second interval
+        getData();
+      }, 2000); //2000mSeconds update rate
+
+		  function toggleGsm() {
+			var x = document.getElementById("toggle-gsm");
+			var y = document.getElementById("toggle-wifi");
+			var gsmType = "GSM";
+			var	wifiType = "WIFI";
+			if (x.checked == true) {
+			  show(document.getElementById("gsm-form"));
+			  hide(document.getElementById("wifi-form"));
+			  sessionStorage.setItem("typeSelected", gsmType);
+			  (y.checked = false);
+			} else {
+			  hide(document.getElementById("gsm-form"));
+			  sessionStorage.setItem("typeSelected", wifiType);
+			}
+		  }
+		  //location.href = "inforede.html";
+
+		  function toggleWifi() {
+			var x = document.getElementById("toggle-wifi");
+			var y = document.getElementById("toggle-gsm");
+			if (x.checked == true) {
+			  show(document.getElementById("wifi-form"));
+			  hide(document.getElementById("gsm-form"));
+			  (y.checked = false);
+			} else {
+			  hide(document.getElementById("wifi-form"));
+			}
+		  }
+
+		  function toggleDhcp() {
+			var x = document.getElementById("toggle-dhcp");
+			if (x.checked == true) {
+			  show(document.getElementById("dhcp-form"));
+			} else {
+			  hide(document.getElementById("dhcp-form"));
+			}
+		  }
+
+		  function hide(elements) {
+			elements = elements.length ? elements : [elements];
+			for (var index = 0; index < elements.length; index++) {
+			  elements[index].style.display = "none";
+			}
+		  }
+
+		  function show(elements) {
+			elements = elements.length ? elements : [elements];
+			for (var index = 0; index < elements.length; index++) {
+			  elements[index].style.display = "block";
+			}
+		  }
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+    function getData() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.overrideMimeType("application/json");
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var myObj = JSON.parse(this.responseText);
+          document.getElementById("ssid").value = myObj.ssid;
+          document.getElementById("pass").value = myObj.pass;
+          document.getElementById("mask").value = myObj.mask;
+          document.getElementById("ip").value = myObj.ip;
+        }
+      };
+    xhttp.open("GET", "/api/data/read/network", true);
+    xhttp.send();
+  }
+
+
+
+
+
+
+			
+		
+    </script>
+  </body>
+</html>

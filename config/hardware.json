@@ -1,0 +1,133 @@
+{
+	"GRNL1" :
+	{
+		"framework" : "ESP8266_RTOS_SDK",
+		"version_prefix" : "GN1",
+		"extra_flags" :
+		{
+			"HARDWARE_GRNL1" : true,
+			"IDF_TARGET" : "esp8266",
+			
+			"DEBUG_SERIAL_TYPE" : "UART_M_NATIVE",
+			"DEBUG_SERIAL_CONFIG" : "\"8N1\"",
+			"DEBUG_SERIAL_BAUD" : 921600,
+			
+			"INTERFACE_MANAGER_SIM800" : false,
+			"INTERFACE_MANAGER_WIFI_AP" : true,
+			"INTERFACE_MANAGER_WIFI_ST" : true,
+			
+			"SPIFFS_SINGLETON" : 0,
+			"SPIFFS_LOG_PAGE_SIZE" : 256,
+			"SPIFFS_BUFFER_SIZE" : 200,
+			"SPIFFS_BASE_ADDR" : "0x300000",
+			"SPIFFS_SIZE" : "0xF0000",
+			"SPIFFS_LOG_BLOCK_SIZE" : 8192,
+			
+			"SIM800_DEFAULT_BAUDRATE": 115200,
+			
+			"GPIO_SIM800_RX"	: 4,
+			"GPIO_SIM800_TX"	: 5,
+			"GPIO_SIM800_PWR"	: 16,
+
+			"GPIO_DEBUG_RX" 	: 3,
+			"GPIO_DEBUG_TX"		: 2,
+
+			"GPIO_RS485_TX"		: 1,
+			"GPIO_RS485_RX"		: 3,
+			"GPIO_RS485_SELECT"	: 0,
+
+			"GPIO_RS232_RX" 	: 33,
+			"GPIO_RS232_TX"		: 14,
+
+			"GPIO_TRIAC"		: 27
+		}
+	},
+	"GRNL2" :
+	{
+		"framework" : "ESP8266_RTOS_SDK",
+		"version_prefix" : "GN2",
+		"extra_flags" :
+		{
+			"HARDWARE_GRNL2" : true,
+			"IDF_TARGET" : "esp8266",
+			
+			"DEBUG_SERIAL_TYPE" : "UART_M_NATIVE",
+			"DEBUG_SERIAL_CONFIG" : "\"8N1\"",
+			"DEBUG_SERIAL_BAUD" : 921600,
+			
+			"INTERFACE_MANAGER_SIM800" : true,
+			"INTERFACE_MANAGER_WIFI_AP" : true,
+			"INTERFACE_MANAGER_WIFI_ST" : true,
+			
+			"SPIFFS_SINGLETON" : 0,
+			"SPIFFS_LOG_PAGE_SIZE" : 256,
+			"SPIFFS_BUFFER_SIZE" : 200,
+			"SPIFFS_BASE_ADDR" : "0x300000",
+			"SPIFFS_SIZE" : "0xF0000",
+			"SPIFFS_LOG_BLOCK_SIZE" : 8192,
+			
+			"SIM800_DEFAULT_BAUDRATE": 115200,
+			
+			"GPIO_SIM800_RX"	: 4,
+			"GPIO_SIM800_TX"	: 5,
+			"GPIO_SIM800_PWR"	: 16,
+
+			"GPIO_DEBUG_RX" 	: 3,
+			"GPIO_DEBUG_TX"		: 2,
+
+			"GPIO_RS485_TX"		: 1,
+			"GPIO_RS485_RX"		: 3,
+			"GPIO_RS485_SELECT"	: 0,
+
+			"GPIO_RS232_RX" 	: 33,
+			"GPIO_RS232_TX"		: 14,
+
+			"GPIO_TRIAC"		: 27
+		}
+	},
+	"GRNL3" :
+	{
+		"framework" : "ESP_IDF",
+		"version_prefix" : "GN3",
+		"extra_flags" :
+		{
+			"HARDWARE_GRNL3" : true,
+			"IDF_TARGET" : "esp32",
+			
+			"DEBUG_SERIAL_TYPE" : "UART_M_NATIVE",
+			"DEBUG_SERIAL_CONFIG" : "\"8N1\"",
+			"DEBUG_SERIAL_BAUD" : 921600,
+			
+			"INTERFACE_MANAGER_SIM800" : true,
+			"INTERFACE_MANAGER_WIFI_AP" : true,
+			"INTERFACE_MANAGER_WIFI_ST" : true,
+			
+			"SPIFFS_SINGLETON" : 0,
+			"SPIFFS_LOG_PAGE_SIZE" : 256,
+			"SPIFFS_BUFFER_SIZE" : 200,
+			"SPIFFS_BASE_ADDR" : "0x300000",
+			"SPIFFS_SIZE" : "0xF0000",
+			"SPIFFS_LOG_BLOCK_SIZE" : 8192,
+			
+			"SIM800_DEFAULT_BAUDRATE": 115200,
+			
+			"GPIO_SIM800_RX"	: 4,
+			"GPIO_SIM800_TX"	: 5,
+			"GPIO_SIM800_PWR"	: 16,
+
+			"GPIO_DEBUG_RX" 	: 3,
+			"GPIO_DEBUG_TX"		: 2,
+
+			"GPIO_RS485_TX"		: 1,
+			"GPIO_RS485_RX"		: 3,
+			"GPIO_RS485_SELECT"	: 0,
+
+			"GPIO_RS232_RX" 	: 33,
+			"GPIO_RS232_TX"		: 14,
+
+			"GPIO_TRIAC"		: 27
+		}
+	}
+}
+
+

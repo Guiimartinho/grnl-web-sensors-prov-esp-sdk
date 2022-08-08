@@ -1,0 +1,20 @@
+{
+	"grnl_tago" :
+	{
+		"broker" : "mqtt.tago.io",
+		"port" : 1883,
+		"user" : "user",
+		"pass" : "12345678",
+		"sub_topic" : "state/%s",
+		"pub_topic" : "action/%s"
+	},
+	"roberto_tago" :
+	{
+		"broker" : "mqtt.tago.io",
+		"port" : 1883,
+		"user" : "roberto",
+		"pass" : "81593b66-b116-4423-91d6-94fbf1a39e5d",
+		"sub_topic" : "tago/state/%s",
+		"pub_topic" : "tago/data/post"
+	}
+}

@@ -1,0 +1,824 @@
+@media only screen and (max-width: 600px) {
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	margin: 0 auto;
+    top: 2000px;
+	left: 0px;
+	width: 414px;
+	height: 736px;
+	background-color: #FFFFFF;
+
+	/*background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box; */
+	/* background: #FFFFFF 0% 0% no-repeat padding-box; */
+	/* opacity: 1; */
+}
+
+#fullcontainer {
+	margin: 0 auto;
+    width: 414px;
+	height: 736px;
+	border: 1px #26C45B solid;
+}
+
+#topopaginas {
+    width: 100%;
+    height: 46px;
+    background-color: #26C45B;
+ }
+    
+#ico_retorno {
+    text-align: center;
+    vertical-align: middle;
+    top:10px;
+    
+    width: 40px;
+    height: 30px;
+    
+    position: absolute;
+    border: 0px solid #0c0c0c;
+    
+} 
+    
+#titulopaginas {
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    font: bold 18px/20px 'Open Sans';
+    color: #FFFFFF;
+    letter-spacing: 2.1px;
+    border: 0px solid #0c0c0c;
+    position: relative;
+    float:right;
+}
+    
+    
+    /* Logomarca Grenole na primeira tela */
+    
+    #logo {
+        margin-top: 144px;
+        margin-left: auto;
+        margin-right: auto;
+        background: transparent url('img/logo_verde.png') 0% no-repeat;	
+        width: 313px;
+        height: 56px;
+        
+        /*
+        margin: 0 auto;
+        margin-top: 144px;
+        left: 50px;
+        width: 313px;
+        height: 56px;
+        background: transparent url('img/logo.png') 0% no-repeat; */
+        /* background: transparent  url('img/logo.png') 0% 0% no-repeat padding-box; */
+        /* opacity: 1; */
+    }
+    
+/* Título na primeira tela */
+    
+    #textoInterface {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 274px;
+        text-align: center;
+        font: normal normal 20px/28px 'Open Sans', sans-serif;
+        letter-spacing: 0.21px;
+        color: #353535;
+    }
+    
+        
+/* Tela Menu principal */
+
+#fundologomenu {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #26C45B; 
+ }
+
+#logomenu {
+	width: 270px;
+	height: 110px;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#textoMedidor {
+	padding-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 270px;
+	text-align: center;
+	font: normal normal 600 12px/15px Open Sans;
+	letter-spacing: 0.33px;
+	color: #FFFFFF;
+	}
+
+#rodape_firmware {
+	margin-top: 30px;
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font: normal 600 11px/15px Open Sans;
+	letter-spacing: 0.33px;
+	color: #0c0c0c;
+	}
+
+#rodape_greenole {
+	top: 690px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font: normal 19px/26px Open Sans;
+	letter-spacing: 3.8px;
+	color: #0c0c0c;
+	}
+
+/* Botões Menu Principal */
+
+a.menu:link, a:visited {
+	text-decoration: none;
+	color: #000000;
+	font: bold 11px 'Opens Sans', sans-serif;
+	text-align: center;
+ }
+  
+a.menu:hover {
+	text-decoration: underline;
+	font: bold 11px 'Opens Sans', sans-serif;
+	color: #353535;
+  }
+
+#comunicacao {
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 130px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	position: absolute;
+}
+
+#inforede {
+	margin-top: 10px;
+	margin-left: 240px;
+	width: 140px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	float: right;
+	position: absolute;
+}
+
+#transmissao {
+	margin-top: 150px;
+	margin-left: 50px;
+	width: 130px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	position: absolute;
+}
+
+#dadosonline {
+	margin-top: 150px;
+	margin-left: 240px;
+	width: 140px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	float: right;
+	position: absolute;
+}
+
+#medidor {
+	margin-top: 300px;
+	margin-left: 50px;
+	width: 130px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	position: absolute;
+}
+
+#instrucoes {
+	margin-top: 300px;
+	margin-left: 240px;
+	width: 140px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	float: right;
+	position: absolute;
+}
+
+h1.instrucoes {
+	padding-top: 10px;
+	text-decoration: none;
+	color: #000000;
+	font: bold 20px Calibri, sans-serif;
+	text-align: left;
+	text-indent: 20px;
+}
+
+h2.instrucoes {
+	padding-top: 10px;
+	text-decoration: none;
+	color: #000000;
+	font: bold 16px Calibri, sans-serif;
+	text-align: left;
+	text-indent: 20px;
+	
+}
+
+p.instrucoes {
+	text-decoration: none;
+	color: #000000;
+	font: normal 14px Calibri, sans-serif;
+	text-align: justify;
+	text-indent: 25px;
+	margin: 15px;
+}
+
+
+/* Input Form SSID PW */
+
+.label-wifi {
+	color: #353535;
+	font: 14/16px 'sans-serif';
+   }
+
+.input-wifi[type="text"],[type="password"] {
+	margin: 10px 10px 10px 10px;
+	width: 40px;
+	height: 20px;
+	background: rgb(255, 255, 255);
+	-webkit-appearance: none;
+	border-radius: 5px;
+	
+   }
+
+/* Fim Input Form SSID PW */
+
+
+/* botões Toggle Switch */
+
+#areabotao {
+	margin: 10px 20px 30px 10px ;
+	border: 0px #000000 solid;
+}
+
+#toggle {
+	display: inline;
+	float: right;
+}
+
+#textobotao {
+	width: 50px;
+	border: 0px #000000 solid;
+	text-decoration: none;
+	color: #000000;
+	font: normal 16px/20px Roboto, sans-serif;
+	text-align: left;
+	text-indent: 25px;
+	margin: 0px;
+	float: left;
+}
+
+#divisor {
+    border-bottom: 1px solid #c3c3c3;
+    
+    margin-left: 22px;
+    opacity: 1;
+}
+
+h1 {
+ font-size: 12px;
+ color: #2c3e50;
+}
+
+.input-toggle[type="checkbox"] {
+ position: relative;
+ width: 40px;
+ height: 20px;
+ background: rgb(255, 255, 255);
+ -webkit-appearance: none;
+ border-radius: 20px;
+ outline: none;
+ transition: .2s;
+ box-shadow: inset 0 0 5px rgba(27, 80, 3, 0.2);
+ cursor: pointer;
+}
+
+.input-toggle:checked[type="checkbox"] {
+ background: #c9f5bc;
+}
+
+.input-toggle[type="checkbox"]::before {
+ z-index: 2;
+ position: absolute;
+ content: "";
+ left: 0;
+ width: 20px;
+ height: 20px;
+ background: #26C45B;
+ border-radius: 50%;
+ transform: scale(1.1);
+ box-shadow: 0 2px 5px rgba(3, 66, 6, 0.2);
+ transition: .2s;
+}
+
+.input-toggle:checked[type="checkbox"]::before {
+ left: 20px;
+}
+
+.toggle {
+ position: relative;
+ display: inline;
+}
+
+.label-toggle {
+ position: absolute;
+ color: #fff;
+ font-weight: 600;
+ font-size: 20px;
+ pointer-events: none;
+}
+
+.onbtn {
+ bottom: 15px;
+ left: 15px;
+}
+
+.ofbtn {
+ bottom: 15px;
+ right: 15px;
+ color: #bdc3c7;
+}
+
+/* Fim botões Toggle Switch *;
+
+/*Tela  Informações de Rede */
+
+#linhainforede {
+    width: 100%;
+	margin: 30px 50px 20px 10px ;
+    margin-left: 30px;
+    border: 0px #000000 solid;
+}
+
+.labelinforede {
+	width: 45%;
+	border: 0px #000000 solid;
+	text-decoration: none;
+	color: #000000;
+	font: Bold 16px/16px 'Roboto', sans-serif;
+	text-align: left;
+    letter-spacing: 0.42px;
+	float: left;
+}
+
+.textoinforede {
+    width: auto;
+	border: 0px #000000 solid;
+	text-decoration: none;
+	color: #000000;
+	font: normal 16px/16px 'Roboto', sans-serif ;
+	text-align: left;
+	letter-spacing: 0.8px;
+}
+
+input[type=submit] {
+    width: 159px;
+    height:34px;
+    background: #26C45B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 3px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    font: Bold 16px/16px 'Roboto', sans-serif ;
+    color: #ffffff;
+	text-align: center;
+    
+    letter-spacing: 1.42px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .input-reset[type=submit] {
+    width: 159px;
+    height:34px;
+	margin-top: 470px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 3px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    font: Bold 16px/16px 'Roboto', sans-serif ;
+    color: #26C45B;
+    
+    letter-spacing: 1.42px;
+    
+    cursor: pointer;
+  }
+
+  /* TELA TRANSMISSÃO */
+
+  /*FORM TRANSMISSÃO*/
+
+  .label-tr {
+    text-align: left;
+    font: normal 12px/12px 'Roboto';
+    letter-spacing: 0.4px;
+    color: #353535;
+    position: unset;
+  }
+
+  .input-tr[type=text],[type=number],[type=url],[type=select],[type=password] {
+    width: 360px;
+    height: 56px;
+	margin: 5px 15px 10px 25px;
+    border: 2px solid #0000001F;
+    border-radius: 6px;
+    color: #000000;	
+  }
+  
+  .placeholder {
+    font-style: normal;
+    font-size: 1em;
+    color: #000000;
+    background: #ffffff;
+    padding: 1px;
+  }
+
+  /* FIM DE TELA TRANSMISSÃO */
+
+  #fullcontainer {
+	margin: 0 auto;
+	width: 414px;
+	height: 736px;
+	border: 1px #26c45b solid;
+  }
+  #topopaginas {
+	width: 100%;
+	height: 46px;
+	background-color: #26c45b;
+  }
+  #ico_retorno {
+	text-align: center;
+	vertical-align: middle;
+	top: 10px;
+	width: 40px;
+	height: 30px;
+	position: absolute;
+	border: 0px solid #0c0c0c;
+  }
+  #titulopaginas {
+	margin-top: 10px;
+	width: 90%;
+	text-align: center;
+	font: bold 18px/20px "Open Sans";
+	color: #ffffff;
+	letter-spacing: 2.1px;
+	border: 0px solid #0c0c0c;
+	position: relative;
+	float: right;
+  }
+  /* Logomarca Grenole na primeira tela */
+  #logo {
+	margin-top: 144px;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent url("img/logo_verde.png") 0% no-repeat;
+	width: 313px;
+	height: 56px;
+	/*
+	 margin: 0 auto;
+	 margin-top: 144px;
+	 left: 50px;
+	 width: 313px;
+	 height: 56px;
+	 background: transparent url('img/logo.png') 0% no-repeat; */
+	/* background: transparent  url('img/logo.png') 0% 0% no-repeat padding-box; */
+	/* opacity: 1; */
+  }
+  /* Título na primeira tela */
+  #textoInterface {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 274px;
+	text-align: center;
+	font: normal normal 20px/28px "Open Sans", sans-serif;
+	letter-spacing: 0.21px;
+	color: #353535;
+  }
+  /* Tela Menu principal */
+  #fundologomenu {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 736px;
+	background: #26c45b;
+  }
+  #logomenu {
+	width: 270px;
+	height: 159px;
+	padding-top: 42px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  #textoMedidor {
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 270px;
+	text-align: center;
+	font: normal normal 600 12px/15px Open Sans;
+	letter-spacing: 0.33px;
+	color: #ffffff;
+  }
+  #rodape_firmware {
+	margin-top: 490px;
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font: normal 600 11px/15px Open Sans;
+	letter-spacing: 0.33px;
+	color: #0c0c0c;
+  }
+  #rodape_greenole {
+	top: 690px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font: normal 19px/26px Open Sans;
+	letter-spacing: 3.8px;
+	color: #0c0c0c;
+  }
+  /* Botões Menu Principal */
+  a.menu:link,
+  a:visited {
+	text-decoration: none;
+	color: #000000;
+	font: bold 11px "Opens Sans", sans-serif;
+	text-align: center;
+  }
+  a.menu:hover {
+	text-decoration: underline;
+	font: bold 11px "Opens Sans", sans-serif;
+	color: #353535;
+  }
+  #comunicacao {
+	margin-top: 15px;
+	margin-left: 50px;
+	width: 130px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	position: absolute;
+  }
+  #inforede {
+	margin-top: 15px;
+	margin-left: 240px;
+	width: 140px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	float: right;
+	position: absolute;
+  }
+  #transmissao {
+	margin-top: 160px;
+	margin-left: 50px;
+	width: 130px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	position: absolute;
+  }
+  #dadosonline {
+	margin-top: 160px;
+	margin-left: 240px;
+	width: 140px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	float: right;
+	position: absolute;
+  }
+  #medidor {
+	margin-top: 320px;
+	margin-left: 50px;
+	width: 130px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	position: absolute;
+  }
+  #instrucoes {
+	margin-top: 320px;
+	margin-left: 240px;
+	width: 140px;
+	height: 120px;
+	text-align: center;
+	border: 0px solid #0c0c0c;
+	float: right;
+	position: absolute;
+  }
+  h1.instrucoes {
+	padding-top: 10px;
+	text-decoration: none;
+	color: #000000;
+	font: bold 20px Calibri, sans-serif;
+	text-align: left;
+	text-indent: 20px;
+  }
+  h2.instrucoes {
+	padding-top: 10px;
+	text-decoration: none;
+	color: #000000;
+	font: bold 16px Calibri, sans-serif;
+	text-align: left;
+	text-indent: 20px;
+  }
+  p.instrucoes {
+	text-decoration: none;
+	color: #000000;
+	font: normal 14px Calibri, sans-serif;
+	text-align: justify;
+	text-indent: 25px;
+	margin: 15px;
+  }
+  /* Input Form SSID PW */
+  .label-wifi {
+	color: #353535;
+	font: 14/16px "sans-serif";
+  }
+  .input-wifi[type="text"],
+  [type="password"] {
+	margin: 10px 10px 10px 10px;
+	width: 40px;
+	height: 20px;
+	background: rgb(255, 255, 255);
+	-webkit-appearance: none;
+	border-radius: 5px;
+  }
+  /* Fim Input Form SSID PW */
+  /* botões Toggle Switch */
+  #areabotao {
+	margin: 10px 20px 30px 10px;
+	border: 0px #000000 solid;
+  }
+  #toggle {
+	display: inline;
+	float: right;
+  }
+  #textobotao {
+	width: 50px;
+	border: 0px #000000 solid;
+	text-decoration: none;
+	color: #000000;
+	font: normal 16px/20px Roboto, sans-serif;
+	text-align: left;
+	text-indent: 25px;
+	margin: 0px;
+	float: left;
+  }
+  #divisor {
+	border-bottom: 1px solid #c3c3c3;
+	margin-left: 22px;
+	margin-right: 22px;
+	opacity: 1;
+  }
+  h1 {
+	font-size: 12px;
+	color: #2c3e50;
+  }
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+  }
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+  }
+  input:checked + .slider {
+	background-color: #26c45b;
+  }
+  input:focus + .slider {
+	box-shadow: 0 0 1px #26c45b;
+  }
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  .slider.round:before {
+	border-radius: 50%;
+  }
+  /* Fim botões Toggle Switch *;
+	 /*Tela  Informações de Rede */
+  #linhainforede {
+	width: 100%;
+	margin: 30px 50px 20px 10px;
+	margin-left: 30px;
+	border: 0px #000000 solid;
+  }
+  .labelinforede {
+	width: 45%;
+	border: 0px #000000 solid;
+	text-decoration: none;
+	color: #000000;
+	font: Bold 16px/16px "Roboto", sans-serif;
+	text-align: left;
+	letter-spacing: 0.42px;
+	float: left;
+  }
+  .textoinforede {
+	width: auto;
+	border: 0px #000000 solid;
+	text-decoration: none;
+	color: #000000;
+	font: normal 16px/16px "Roboto", sans-serif;
+	text-align: left;
+	letter-spacing: 0.8px;
+  }
+  input[type="submit"] {
+	width: 159px;
+	height: 34px;
+	background: #26c45b 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 3px #00000029;
+	border-radius: 6px;
+	opacity: 1;
+	font: Bold 16px/16px "Roboto", sans-serif;
+	color: #ffffff;
+	letter-spacing: 1.42px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+  /* TELA TRANSMISSÃO */
+  /*FORM TRANSMISSÃO*/
+  .label-tr {
+	text-align: left;
+	font: normal 12px/12px "Roboto";
+	letter-spacing: 0.4px;
+	color: #353535;
+	position: unset;
+  }
+  .input-tr[type="text"],
+  [type="number"],
+  [type="url"],
+  [type="select"],
+  [type="password"] {
+	width: 360px;
+	height: 56px;
+	margin: 5px 15px 10px 25px;
+	border: 2px solid #0000001f;
+	border-radius: 6px;
+	color: #000000;
+  }
+  .placeholder {
+	font-style: normal;
+	font-size: 1em;
+	color: #000000;
+	background: #ffffff;
+	padding: 1px;
+  }
+
+        /* FIM DE TELA TRANSMISSÃO */
